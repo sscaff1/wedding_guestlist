@@ -1,2 +1,2 @@
-# wedding_guestlist
-A Simple Wedding Guest List coded in CakePHP
+# Wedding Guest List in CakePHP
+I made this simple application to keep track of my wedding guest list. It was very useful for keeping track of invitations and how many people my wife and I could expect at our wedding. I realize other tools like this exist, but honestly this didn't take very long to program. Plus it does a couple of nice things that I couldn't get other tools online to do. For example, copying guests, adding up the number of guests maybe attending vs definitely attending, and some Ajax niceties that help add guests quickly. I hope this helps whoever uses it.
