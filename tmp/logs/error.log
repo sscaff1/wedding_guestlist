@@ -1,0 +1,488 @@
+2014-12-10 02:50:48 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/copy.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/copy.ctp',
+)
+Request URL: /wedding/guests/copy/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-10 03:31:57 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/steven/Documents/Sites/wedding/Controller/GuestsController.php, line 50]
+2014-12-10 03:31:57 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/steven/D...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/steven/D...', 50, Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/steven/D...', 50, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 03:32:15 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/steven/Documents/Sites/wedding/Controller/GuestsController.php, line 50]
+2014-12-10 03:32:15 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/steven/D...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/steven/D...', 50, Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/steven/D...', 50, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 03:32:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not
+				FROM
+					guests
+				WHERE
+					guests.attending = "No") as t3' at line 19
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT?????t1.a...', Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT?????t1.a...', Array, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(537): DboSource->fetchAll('SELECT?????t1.a...')
+#4 [internal function]: DboSource->query('SELECT?????t1.a...')
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Model.php(3354): call_user_func_array(Array, Array)
+#6 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(50): Model->query('SELECT?????t1.a...')
+#7 [internal function]: GuestsController->index()
+#8 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#9 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#11 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-02 02:42:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tot_guest' in 'field list'
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Guest`....', Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Guest`....', Array, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Guest`....', false)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Guest), Array)
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(28): Model->find('all', Array)
+#7 [internal function]: GuestsController->index()
+#8 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#9 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#11 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-02 02:59:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Guest.attending' in 'group statement'
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT SUM(`Gue...', Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT SUM(`Gue...', Array, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT SUM(`Gue...', false)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Guest), Array)
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(28): Model->find('all', Array)
+#7 [internal function]: GuestsController->index()
+#8 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#9 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#11 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-02 03:00:07 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/steven/Documents/Sites/wedding/Controller/GuestsController.php, line 27]
+2015-01-02 03:00:07 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/steven/D...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/steven/D...', 27, Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/steven/D...', 27, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-02 03:42:51 Error: [MissingComponentException] Component class JsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'JsComponent',
+  'plugin' => false,
+)
+Request URL: /wedding/guests/add
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Js', Array)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(GuestsController))
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-02 03:46:41 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/steven/Documents/Sites/wedding/Controller/GuestsController.php, line 39]
+2015-01-02 03:46:41 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wedding/guests/add
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/steven/D...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/steven/D...', 39, Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/steven/D...', 39, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-08 01:33:23 Error: [MissingControllerException] Controller class GuestController could not be found.
+Exception Attributes: array (
+  'class' => 'GuestController',
+  'plugin' => NULL,
+)
+Request URL: /wedding/guest
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-08 01:43:56 Error: [MissingControllerException] Controller class UpdateAttendingController could not be found.
+Exception Attributes: array (
+  'class' => 'UpdateAttendingController',
+  'plugin' => NULL,
+)
+Request URL: /wedding/update_attending
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-08 01:50:32 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_attending.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_attending.ctp',
+)
+Request URL: /wedding/guests/update_attending
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-08 01:50:36 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_attending.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_attending.ctp',
+)
+Request URL: /wedding/guests/update_attending
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-08 01:50:40 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_attending.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_attending.ctp',
+)
+Request URL: /wedding/guests/update_attending
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 02:03:16 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Users/steven/Documents/Sites/wedding/View/Guests/index.ctp, line 34]
+2015-01-28 02:03:16 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /wedding/guests
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/steven/D...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/steven/D...', 34, Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/steven/D...', 34, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-28 02:23:47 Error: [MissingControllerException] Controller class WeddingController could not be found.
+Exception Attributes: array (
+  'class' => 'WeddingController',
+  'plugin' => NULL,
+)
+Request URL: /wedding/wedding/guests/edit
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-28 02:32:35 Error: [MissingControllerException] Controller class WeddingController could not be found.
+Exception Attributes: array (
+  'class' => 'WeddingController',
+  'plugin' => NULL,
+)
+Request URL: /wedding/wedding/guests/edit/28
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-28 02:33:31 Error: [MissingControllerException] Controller class WeddingController could not be found.
+Exception Attributes: array (
+  'class' => 'WeddingController',
+  'plugin' => NULL,
+)
+Request URL: /wedding/wedding/guests/edit/28
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-28 02:42:54 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [/Users/steven/Documents/Sites/wedding/View/Guests/index.ctp, line 35]
+2015-01-28 02:42:54 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /wedding/
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/steven/D...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/steven/D...', 35, Array)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/steven/D...', 35, Array)
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-28 03:01:03 Error: [CakeException] Method saveField does not exist
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->__call('saveField', Array)
+#1 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->saveField('rsvp_rec', NULL)
+#2 [internal function]: GuestsController->update_rsvp('1')
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#6 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-28 03:01:13 Error: [CakeException] Method saveField does not exist
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->__call('saveField', Array)
+#1 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->saveField('rsvp_rec', NULL)
+#2 [internal function]: GuestsController->update_rsvp('1')
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#6 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-28 03:01:22 Error: [CakeException] Method saveField does not exist
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->__call('saveField', Array)
+#1 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->saveField('rsvp_rec', NULL)
+#2 [internal function]: GuestsController->update_rsvp('1')
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#6 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-28 03:08:59 Error: [CakeException] Method saveField does not exist
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->__call('saveField', Array)
+#1 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->saveField('rsvp_rec', NULL)
+#2 [internal function]: GuestsController->update_rsvp('1')
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#6 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-28 03:09:04 Error: [CakeException] Method saveField does not exist
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->__call('saveField', Array)
+#1 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->saveField('rsvp_rec', NULL)
+#2 [internal function]: GuestsController->update_rsvp('1')
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#6 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-28 03:09:28 Error: [CakeException] Method saveField does not exist
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->__call('saveField', Array)
+#1 /Users/steven/Documents/Sites/wedding/Controller/GuestsController.php(55): CakeRequest->saveField('rsvp_rec', NULL)
+#2 [internal function]: GuestsController->update_rsvp('1')
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GuestsController), Array)
+#4 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#6 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-28 03:10:34 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:10:37 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:11:09 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:13:59 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:14:03 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:16:54 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/30
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:16:57 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/30
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:17:25 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/30
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:17:39 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:19:17 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:40:43 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:40:46 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:40:50 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:41:32 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 03:41:34 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 04:52:02 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp/1
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-28 04:55:26 Error: [MissingViewException] View file "/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/steven/Documents/Sites/wedding/View/Guests/update_rsvp.ctp',
+)
+Request URL: /wedding/guests/update_rsvp
+Stack Trace:
+#0 /Users/steven/Documents/Sites/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/steven/Documents/Sites/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Users/steven/Documents/Sites/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GuestsController), Object(CakeRequest))
+#4 /Users/steven/Documents/Sites/wedding/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
